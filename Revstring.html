@@ -11,12 +11,12 @@
 </body>
 <script>
 function plndrm(input) {
- for (let i = 0; i < (input.length)/ 2; i++) {
-    if (input[i] === input[input.length-1-i]) {  
-        return 'It is a palindrome';}
-    else{
-    return 'It is not a palindrome';}
- }
+    var halflen = Math.floor(input.length/2);
+ for (let i = 0; i <= halflen; i++) {
+    if (input[i] !== input[input.length-1-i]) {  
+        return 'It is not a palindrome';}
+    }
+ return 'It is a palindrome';
 }
 </script>
 </html>
